@@ -1,6 +1,6 @@
 @font-face {
   font-family: Supporterhuset;
-  src: url("../fonts/supporterhuset/supporterhuset.otf") format("otf"), url("../fonts/supporterhuset/supporterhuset-webfont.ttf") format("truetype"), url("../fonts/supporterhuset/supporterhuset-webfont.woff2") format("woff2"), url("../fonts/supporterhuset/supporterhuset-webfont.woff") format("woff");
+  src: url("../fonts/supporterhuset.otf") format("otf"), url("../fonts/supporterhuset/supporterhuset-webfont.ttf") format("truetype"), url("../fonts/supporterhuset/supporterhuset-webfont.woff2") format("woff2"), url("../fonts/supporterhuset/supporterhuset-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -36,7 +36,7 @@ a {
 
 h1 {
   font-size: 2.5rem;
-  font-family: supporterhuset, Impact, Helvetica, sans-serif;
+  font-family: Supporterhuset, Impact, Helvetica, sans-serif;
   color: #003865;
 }
 
@@ -69,7 +69,7 @@ p {
   align-items: center;
   margin: 2rem;
   padding: 2rem;
-  font-family: supporterhuset, Impact, Helvetica, sans-serif;
+  font-family: Supporterhuset, Impact, Helvetica, sans-serif;
   width: fit-content;
   height: fit-content;
   font-size: 2.5rem;
@@ -182,7 +182,7 @@ p {
 }
 
 .footer__item__p {
-  font-family: supporterhuset, Impact, Helvetica, sans-serif;
+  font-family: Supporterhuset, Impact, Helvetica, sans-serif;
   font-size: 1.5rem;
   padding-top: 0.5rem;
   color: #003865;
@@ -196,7 +196,7 @@ p {
 }
 
 .footer__item__a {
-  font-family: supporterhuset, Impact, Helvetica, sans-serif;
+  font-family: Supporterhuset, Impact, Helvetica, sans-serif;
   color: #003865;
   display: flex;
   flex-direction: column;
@@ -329,7 +329,7 @@ p {
 }
 
 .frontpage-grid__h3 {
-  font-family: supporterhuset, Impact, Helvetica, sans-serif;
+  font-family: Supporterhuset, Impact, Helvetica, sans-serif;
   font-size: 1rem;
   color: #fff;
   position: absolute;
@@ -381,7 +381,7 @@ p {
 }
 
 .main-nav__content {
-  font-family: supporterhuset, Impact, Helvetica, sans-serif;
+  font-family: Supporterhuset, Impact, Helvetica, sans-serif;
   font-size: 3em;
   color: #003865;
   display: none;
@@ -518,7 +518,7 @@ p {
 }
 
 .page-grid__h3 {
-  font-family: supporterhuset, Impact, Helvetica, sans-serif;
+  font-family: Supporterhuset, Impact, Helvetica, sans-serif;
   font-size: 2rem;
   color: #fff;
   position: absolute;
@@ -550,7 +550,7 @@ p {
 }
 
 .post-cover-h1 {
-  font-family: supporterhuset_italic, Impact, Helvetica, sans-serif;
+  font-family: Supporterhuset_italic, Impact, Helvetica, sans-serif;
   font-size: 3rem;
   color: #fff;
   position: absolute;
@@ -586,7 +586,7 @@ p {
 
 .post-grid__h3 {
   padding: 1rem 0;
-  font-family: supporterhuset, Impact, Helvetica, sans-serif;
+  font-family: Supporterhuset, Impact, Helvetica, sans-serif;
   font-size: 1.5rem;
   color: #003865;
   top: 80%;
