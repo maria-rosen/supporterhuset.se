@@ -1,0 +1,600 @@
+@font-face {
+  font-family: Supporterhuset;
+  src: url("/fonts/supporterhuset/supporterhuset.otf") format("otf"), url("/fonts/supporterhuset/supporterhuset-webfont.ttf") format("truetype"), url("/fonts/supporterhuset/supporterhuset-webfont.woff2") format("woff2"), url("/fonts/supporterhuset/supporterhuset-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Supporterhuset_italic;
+  src: url("/fonts/supporterhuset/supporterhuset.otf") format("otf"), url("/fonts/supporterhuset-italic/supporterhuset_italic-webfont.ttf") format("truetype"), url("/fonts/supporterhuset-italic/supporterhuset_italic-webfont.woff2") format("woff2"), url("/fonts/supporterhuset-italic/supporterhuset_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* 10px / 16 px = 62.5%. 1rem = 10px */
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: supporterhuset, Impact, Helvetica, sans-serif;
+  color: #003865;
+}
+
+@media only screen and (min-width: 56.25em) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+p {
+  font-size: 1.5rem;
+  font-family: "Proxima-Nova", "Century Gothic", serif;
+}
+
+@media only screen and (min-width: 56.25em) {
+  p {
+    font-size: 2rem;
+  }
+}
+
+.main-cta__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main-cta__a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  padding: 2rem;
+  font-family: supporterhuset, Impact, Helvetica, sans-serif;
+  width: fit-content;
+  height: fit-content;
+  font-size: 2.5rem;
+  background-color: #003865;
+  border-radius: 30px;
+  color: #fff;
+  transition: all .2s;
+}
+
+.main-cta__a:hover {
+  background-color: rgba(0, 56, 101, 0.3);
+}
+
+@media only screen and (min-width: 56.25em) {
+  .main-cta__a {
+    border-radius: 30px;
+  }
+}
+
+.scroll-to-top__container {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.scroll-to-top {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: none;
+  background-color: #003865;
+  color: #fff;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+@media only screen and (min-width: 56.25em) {
+  .scroll-to-top {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+.scroll-to-top:hover {
+  background-color: rgba(0, 56, 101, 0.3);
+}
+
+.footer {
+  height: fit-content;
+  width: 100%;
+  background-color: #84A3C4;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 56.25em) {
+  .footer {
+    font-size: 3rem;
+    font-size: 2.5rem;
+  }
+}
+
+.footer__divider {
+  width: 80%;
+  height: 3px;
+  color: #003865;
+}
+
+.footer__container--1 {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__logo {
+  height: 9rem;
+}
+
+@media only screen and (min-width: 56.25em) {
+  .footer__logo {
+    height: 12rem;
+  }
+}
+
+.footer__container--2 {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 56.25em) {
+  .footer__container--2 {
+    justify-content: space-around;
+    flex-direction: row;
+  }
+}
+
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1.5rem;
+}
+
+@media only screen and (min-width: 56.25em) {
+  .footer__item {
+    padding-top: 3rem;
+  }
+}
+
+.footer__item__p {
+  font-family: supporterhuset, Impact, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+  color: #003865;
+}
+
+@media only screen and (min-width: 56.25em) {
+  .footer__item__p {
+    padding-top: 1rem;
+    font-size: 2rem;
+  }
+}
+
+.footer__item__a {
+  font-family: supporterhuset, Impact, Helvetica, sans-serif;
+  color: #003865;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all .2s;
+}
+
+.footer__item__a:hover {
+  cursor: pointer;
+  color: #000;
+}
+
+.footer__container--3 {
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #84A3C4;
+  min-width: 100vw;
+}
+
+.bg-video__content {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.bg-video__content.hidden {
+  display: none;
+}
+
+.section__main {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 56.25em) {
+  .section__main {
+    background-size: cover;
+    min-height: 100vh;
+  }
+}
+
+.section__main--content {
+  padding-top: 2rem;
+  width: 80%;
+  background-color: #fff;
+  height: fit-content;
+  min-height: 100vh;
+}
+
+@media only screen and (min-width: 56.25em) {
+  .section__main--content {
+    width: 60%;
+    padding: 0 6rem 3rem;
+  }
+}
+
+.page-section__main--content-h2 {
+  padding: 2rem 0 0;
+}
+
+.section__main--content-p {
+  padding: 2rem 0 3rem;
+  min-width: 80%;
+}
+
+.preamble__container {
+  clear: both;
+  display: flex;
+  justify-content: center;
+}
+
+.preamble {
+  margin-top: 3rem;
+  padding: 0 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 56.25em) {
+  .preamble {
+    width: 60%;
+  }
+}
+
+.preamble__h1 {
+  padding: 2rem;
+}
+
+.preamble__p {
+  padding: 2rem;
+  justify-content: center;
+}
+
+.frontpage-grid__container {
+  display: flex;
+  justify-content: center;
+}
+
+.frontpage-grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media only screen and (min-width: 56.25em) {
+  .frontpage-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+.frontpage-grid-item {
+  position: relative;
+}
+
+.frontpage-grid__img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.frontpage-grid__h3 {
+  font-family: supporterhuset, Impact, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 0.2rem #000);
+}
+
+@media only screen and (min-width: 56.25em) {
+  .frontpage-grid__h3 {
+    font-size: 2rem;
+  }
+}
+
+.header {
+  display: flex;
+}
+
+.bg-video__logo__container {
+  display: flex;
+  background-color: none;
+  z-index: 1;
+}
+
+.bg-video__logo {
+  height: 7rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+@media only screen and (min-width: 56.25em) {
+  .bg-video__logo {
+    height: 10rem;
+  }
+}
+
+.bg-video__logo.active {
+  display: none;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  z-index: 5;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.main-nav__content {
+  font-family: supporterhuset, Impact, Helvetica, sans-serif;
+  font-size: 3em;
+  color: #003865;
+  display: none;
+  transition: .6s;
+}
+
+.main-nav__item--link {
+  color: #003865;
+}
+
+.main-nav__item--link:hover {
+  color: #84A3C4;
+}
+
+.main-nav__item--link:active {
+  color: #003865;
+}
+
+.main-nav__content.active {
+  text-align: center;
+  padding-top: 3em;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+  position: fixed;
+}
+
+.hamburger {
+  margin-right: 1em;
+}
+
+.bar {
+  display: block;
+  width: 30px;
+  height: 5px;
+  border-radius: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #003865;
+}
+
+@media only screen and (min-width: 56.25em) {
+  .bar {
+    width: 40px;
+    height: 7px;
+  }
+}
+
+.hamburger.active {
+  background-color: #fff;
+  margin-right: 0;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(15px) translateX(-1px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) translateX(-1px) rotate(-45deg);
+}
+
+.page-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  min-width: 100vw;
+}
+
+.page-cover-img__container {
+  display: flex;
+  justify-content: center;
+}
+
+.page-cover-img {
+  width: 100vw;
+  background-size: cover;
+}
+
+.page-section-main {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 56.25em) {
+  .page-section-main {
+    background-size: cover;
+    min-height: 100vh;
+  }
+}
+
+.page-section-main__content {
+  padding: 2rem 0;
+  width: 80%;
+  background-color: #fff;
+  height: fit-content;
+  min-height: 100vh;
+}
+
+@media only screen and (min-width: 56.25em) {
+  .page-section-main__content {
+    width: 60%;
+    padding: 3rem 0;
+  }
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+@media only screen and (min-width: 56.25em) {
+  .page-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+}
+
+.page-grid-item {
+  position: relative;
+}
+
+.page-grid__img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.page-grid__h3 {
+  font-family: supporterhuset, Impact, Helvetica, sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 0.2rem #000);
+}
+
+@media only screen and (min-width: 56.25em) {
+  .page-grid__h3 {
+    font-size: 4rem;
+  }
+}
+
+.page-cover-img__container {
+  position: relative;
+}
+
+.post-cover-img {
+  width: 100vw;
+  background-size: cover;
+}
+
+.post-cover-h1__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.post-cover-h1 {
+  font-family: supporterhuset_italic, Impact, Helvetica, sans-serif;
+  font-size: 3rem;
+  color: #fff;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 56.25em) {
+  .post-cover-h1 {
+    font-size: 5rem;
+  }
+}
+
+.post-grid {
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media only screen and (min-width: 56.25em) {
+  .post-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+}
+
+.post-grid__img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.post-grid__h3 {
+  padding: 1rem 0;
+  font-family: supporterhuset, Impact, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: #003865;
+  top: 80%;
+}
+
+@media only screen and (min-width: 56.25em) {
+  .post-grid__h3 {
+    font-size: 3rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,133 @@
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $skyblue;
+  min-width: 100vw;
+}
+
+.bg-video__content {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-size: cover;
+    object-fit: cover;
+  
+    // @media only screen and (min-width: $bp-medium) {
+    //   height: 100vh;
+    // }
+  }
+  
+  .bg-video__content.hidden {
+    display: none;
+  }
+
+  .section__main {
+    display: flex;
+    justify-content: center;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+  
+    @media only screen and (min-width: $bp-medium) {
+      background-size: cover;
+      min-height: 100vh;
+    }
+  }
+  
+  .section__main--content {
+    padding-top: 2rem;
+    width: 80%;
+    background-color: #fff;
+    height: fit-content;
+    min-height: 100vh;
+  
+    @media only screen and (min-width: $bp-medium) {
+      width: 60%;
+      padding: 0 6rem 3rem;
+    }
+  }
+
+  .page-section__main--content-h2 {
+    padding: 2rem 0 0;
+  }
+
+  .section__main--content-p {
+    padding: 2rem 0 3rem;
+    min-width: 80%;
+  }
+  
+  .preamble__container {
+    clear: both;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .preamble {
+    margin-top: 3rem;
+    padding: 0 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    @media only screen and (min-width: $bp-medium) {
+      // margin-top: 90rem;
+      width: 60%;
+    }
+  }
+  
+  .preamble__h1 {
+    padding: 2rem;
+  }
+  
+  .preamble__p {
+    padding: 2rem;
+    justify-content: center;
+  }
+
+  .frontpage-grid__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .frontpage-grid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media only screen and (min-width: $bp-medium) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+  }
+
+  .frontpage-grid-item {
+    position: relative;
+  }
+
+  .frontpage-grid__img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+
+  .frontpage-grid__h3 {
+    font-family: $font-heading;
+    font-size: 1rem;
+    color: #fff;
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0 0 0.2rem #000);
+
+    @media only screen and (min-width: $bp-medium) {
+      font-size: 2rem;
+    }
+  }
+
+  
+
+
+  
+  

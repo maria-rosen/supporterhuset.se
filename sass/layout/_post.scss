@@ -1,0 +1,62 @@
+.page-cover-img__container {
+  position: relative;
+}
+
+.post-cover-img {
+    width: 100vw;
+    background-size: cover;
+    // padding: 5rem;
+
+    // @media only screen and (min-width: $bp-medium) { 
+    //     padding: 6rem;
+    // }
+}
+
+.post-cover-h1__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.post-cover-h1 {
+    font-family: $font-heading-it;
+    font-size: 3rem;
+    color: #fff;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media only screen and (min-width: $bp-medium) {
+      font-size: 5rem;
+    }
+  }
+
+  .post-grid {
+    padding: 2rem 0;
+    display: grid; 
+    grid-template-columns: repeat(1, 1fr);
+
+    @media only screen and (min-width: $bp-medium) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 1rem;
+    }
+  }
+
+  .post-grid__img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+
+  .post-grid__h3 {
+    padding: 1rem 0;
+    font-family: $font-heading;
+    font-size: 1.5rem;
+    color: $emblemblue;
+    top: 80%;
+
+    @media only screen and (min-width: $bp-medium) {
+      font-size: 3rem;
+    }
+  }

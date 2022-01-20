@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Supporterhuset";
+  src: url("fonts/Supporterhuset.otf") format("woff"), url("fonts/Supporterhuset-Italic.otf") format("woff");
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+  /* 10px / 16 px = 62.5%. 1rem = 10px */
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: "Supporterhuset", Impact, Helvetica, sans-serif;
+  color: #003865;
+}
+
+@media only screen and (min-width: 56.25em) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+p {
+  font-size: 1.5rem;
+  font-family: "Proxima Nova", "Century Gothic", serif;
+}
+
+@media only screen and (min-width: 56.25em) {
+  p {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=base.css.map */

@@ -1,0 +1,117 @@
+.header {
+  display: flex;
+
+}
+
+.bg-video__logo__container {
+  display: flex;
+  background-color: none;
+  z-index: 1;
+}
+
+.bg-video__logo {
+  height: 7rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+
+
+  @media only screen and (min-width: $bp-medium) {
+    height: 10rem;
+  }
+}
+
+.bg-video__logo.active {
+  display: none;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    z-index: 5;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  
+  .main-nav__content {
+    font-family: $font-heading;
+    font-size: 3em;
+    color: $emblemblue;
+    display: none;
+    transition: .6s;
+  }
+  
+  .main-nav__item--link {
+    color: $emblemblue;
+
+    &:hover {
+      color: $skyblue; 
+    }
+
+    &:active {
+      color: $emblemblue;
+    }
+  }
+  
+  .main-nav__content.active {
+    text-align: center;
+    padding-top: 3em;
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    position: fixed;
+  }
+  
+  // .main-nav__item:hover {
+  //     display: inline-block;
+  //     color: red;
+  //     cursor: pointer;    
+  // }
+  
+  // .main-nav__item:active {
+  //     display: inline-block;
+  //     background-color: $skyblue;
+  //     cursor: pointer;    
+  // }
+  
+  .hamburger {
+    // display: none;
+    margin-right: 1em;
+  }
+  
+  .bar {
+    display: block;
+    width: 30px;
+    height: 5px;
+    border-radius: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: $emblemblue;
+  }
+
+    @media only screen and (min-width: $bp-medium) {
+     .bar {
+        width: 40px;
+        height: 7px;
+      }
+  }
+  
+  .hamburger.active {
+    background-color: #fff;
+    margin-right: 0;
+    // border: none;
+  }
+  
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(15px) translateX(-1px) rotate(45deg);
+  }
+  
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) translateX(-1px) rotate(-45deg);
+  }

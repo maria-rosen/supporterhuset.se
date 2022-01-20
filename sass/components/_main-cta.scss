@@ -1,0 +1,41 @@
+.main-cta__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+.main-cta__a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    padding: 2rem;
+    font-family: $font-heading;
+    width: fit-content;
+    height: fit-content;
+    font-size: 2.5rem;
+    background-color: $emblemblue;
+    border-radius: 30px;
+    color: #fff;
+    transition: all .2s;
+  
+      &:hover {
+        background-color: $emblemblue-light;
+      }
+  
+      @media only screen and (min-width: $bp-medium) {
+        border-radius: 30px;
+      }
+  }
+
+  // .main-cta__a--alt {
+  //   padding: 2rem;
+  //   position: absolute;
+  //   top: 80%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+
+  //   @media only screen and (min-width: $bp-medium) {
+  //     padding: 3rem;
+  //   }
+  // } 

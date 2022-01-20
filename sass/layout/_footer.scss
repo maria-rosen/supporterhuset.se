@@ -1,0 +1,97 @@
+.footer {
+    height: fit-content;
+    width: 100%;
+    background-color: $skyblue;
+    padding: 2rem;
+    font-size: 2rem;
+    
+    @media only screen and (min-width: $bp-medium) {
+      font-size: 3rem;
+      font-size: 2.5rem;
+    }
+  }
+
+  .footer__divider {
+    width: 80%;
+    height: 3px;
+    color: $emblemblue;
+  }
+
+  .footer__container--1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__logo {
+    height: 9rem;
+
+    @media only screen and (min-width: $bp-medium) {
+      height: 12rem;
+    }
+  }
+  
+  .footer__container--2{
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  
+    @media only screen and (min-width: $bp-medium) {
+      justify-content: space-around;
+      flex-direction: row;
+    }
+  }
+  
+  .footer__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5rem;
+  
+    @media only screen and (min-width: $bp-medium) {
+      padding-top: 3rem;
+    }  
+  }
+
+  .footer__item__p {
+    font-family: $font-heading;
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    color: $emblemblue;
+  
+    @media only screen and (min-width: $bp-medium) {
+      padding-top: 1rem;
+      font-size: 2rem;
+    }
+  }
+  
+  .footer__item__a {
+    font-family: $font-heading;
+    color: $emblemblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all .2s;
+  
+    &:hover {
+      cursor: pointer;
+      color: #000;
+    }
+  }
+  
+  .footer__icon {
+    // font-size: 2rem;
+  
+    @media only screen and (min-width: $bp-medium) {
+      // font-size: 2.5rem;
+    }
+  }
+  
+  
+  
+  .footer__container--3 {
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  
