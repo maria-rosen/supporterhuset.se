@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: Supporterhuset_italic;
-  src: url("../fonts/supporterhuset/supporterhuset.otf") format("otf"), url("../fonts/supporterhuset-italic/supporterhuset_italic-webfont.ttf") format("truetype"), url("../fonts/supporterhuset-italic/supporterhuset_italic-webfont.woff2") format("woff2"), url("../fonts/supporterhuset-italic/supporterhuset_italic-webfont.woff") format("woff");
+  src: url("../fonts/supporterhuset.otf") format("otf"), url("../fonts/supporterhuset-italic/supporterhuset_italic-webfont.ttf") format("truetype"), url("../fonts/supporterhuset-italic/supporterhuset_italic-webfont.woff2") format("woff2"), url("../fonts/supporterhuset-italic/supporterhuset_italic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: italic;
 }
