@@ -57,11 +57,9 @@ p {
   }
 }
 
-@media only screen and (max-width: 75em) {
-  main {
-    max-width: 800px;
-    margin: 0 auto;
-  }
+main {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .main-cta__container {
