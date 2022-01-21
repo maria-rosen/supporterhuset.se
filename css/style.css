@@ -43,12 +43,13 @@ h1 {
   font-family: Supporterhuset, Impact, Helvetica, sans-serif;
   color: #003865;
   text-align: center;
+  padding: 1rem;
 }
 
 @media only screen and (min-width: 56.25em) {
   h1 {
     font-size: 4rem;
-    padding: 1rem;
+    padding: 2rem;
   }
 }
 
@@ -71,6 +72,13 @@ p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 56.25em) {
+  .main-cta__container {
+    padding: 2rem;
+  }
 }
 
 .main-cta__a {

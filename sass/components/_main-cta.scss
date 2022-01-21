@@ -2,6 +2,11 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 1rem;
+
+    @media only screen and (min-width: $bp-medium) {
+      padding: 2rem;
+    }
   }
 
 .main-cta__a {

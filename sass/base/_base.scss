@@ -74,10 +74,11 @@ h1 {
   font-family: $font-heading;
   color: $emblemblue;
   text-align: center;
+  padding: 1rem;
 
   @media only screen and (min-width: $bp-medium) {
     font-size: 4rem;
-    padding: 1rem;
+    padding: 2rem;
   }
 }
 
