@@ -38,6 +38,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  background-color: rgba(0, 56, 101, 0.3);
+}
+
 h1 {
   font-size: 2.5rem;
   font-family: Supporterhuset, Impact, Helvetica, sans-serif;
@@ -61,6 +65,10 @@ p {
   p {
     font-size: 2rem;
   }
+}
+
+.fa-brands {
+  color: #003865;
 }
 
 .main-cta__container {

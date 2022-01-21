@@ -67,6 +67,10 @@ li {
 
 a {
   text-decoration: none;
+
+  &:hover {
+    background-color: $emblemblue-light;
+  }
 }
 
 h1 {
@@ -88,4 +92,8 @@ p {
   @media only screen and (min-width: $bp-medium) {
     font-size: 2rem;
   }
+}
+
+.fa-brands {
+  color: $emblemblue;
 }
