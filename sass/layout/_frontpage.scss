@@ -3,10 +3,6 @@
   top: 0;
   left: 0;
   background-color: $skyblue;
-  min-width: 100vw;
-
-  @media only screen and (min-width: $bp-largest) {
-    max-width: 1200px;
 }
 
 .bg-video__content {
