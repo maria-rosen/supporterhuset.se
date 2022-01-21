@@ -56,6 +56,10 @@ html {
   // }
 }
 
+body {
+  background-color: $skyblue;
+}
+
 
 li {
   list-style: none;
@@ -82,9 +86,4 @@ p {
   @media only screen and (min-width: $bp-medium) {
     font-size: 2rem;
   }
-}
-
-main {
-    max-width: 800px;
-    margin: 0 auto;
 }
