@@ -383,6 +383,13 @@ p {
   left: 0;
 }
 
+.main-nav__p {
+  font-family: Supporterhuset, Impact, Helvetica, sans-serif;
+  font-size: 1em;
+  text-decoration: underline;
+  padding-bottom: 1rem;
+}
+
 .main-nav__content {
   font-family: Supporterhuset, Impact, Helvetica, sans-serif;
   font-size: 3em;
