@@ -359,6 +359,12 @@ p {
 .frontpage-grid__img {
   width: 100%;
   aspect-ratio: 16 / 9;
+  transition: all .2s;
+}
+
+.frontpage-grid__img:hover {
+  filter: grayscale(0.6);
+  cursor: pointer;
 }
 
 .frontpage-grid__h3 {
@@ -374,7 +380,7 @@ p {
 
 @media only screen and (min-width: 56.25em) {
   .frontpage-grid__h3 {
-    font-size: 2rem;
+    font-size: 4rem;
   }
 }
 
