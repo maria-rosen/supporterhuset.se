@@ -39,6 +39,8 @@
     @media only screen and (min-width: $bp-medium) {
       justify-content: space-around;
       flex-direction: row;
+      max-width: 1000px;
+      margin: 0 auto;
     }
   }
   
@@ -75,7 +77,7 @@
   
     &:hover {
       cursor: pointer;
-      color: #000;
+      color: $emblemblue-light;
     }
   }
   
@@ -88,7 +90,6 @@
   }
   
   
-  
   .footer__container--3 {
     padding: 1.5rem;
     display: flex;
@@ -98,6 +99,20 @@
     @media only screen and (min-width: $bp-medium) {
       justify-content: space-around;
       flex-direction: row;
+      max-width: 600px;
+      margin: 0 auto;
     }
   }
-  
+
+  .fa-facebook-square:hover {
+    color: $emblemblue-light;
+  }
+
+  .fa-instagram-square:hover {
+    color: $emblemblue-light;
+  }
+
+
+  .fa-twitter-square:hover {
+    color: $emblemblue-light;
+  }

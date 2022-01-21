@@ -38,10 +38,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  background-color: rgba(0, 56, 101, 0.3);
-}
-
 h1 {
   font-size: 2.5rem;
   font-family: Supporterhuset, Impact, Helvetica, sans-serif;
@@ -179,6 +175,8 @@ p {
   .footer__container--2 {
     justify-content: space-around;
     flex-direction: row;
+    max-width: 1000px;
+    margin: 0 auto;
   }
 }
 
@@ -220,7 +218,7 @@ p {
 
 .footer__item__a:hover {
   cursor: pointer;
-  color: #000;
+  color: rgba(0, 56, 101, 0.3);
 }
 
 .footer__container--3 {
@@ -234,7 +232,21 @@ p {
   .footer__container--3 {
     justify-content: space-around;
     flex-direction: row;
+    max-width: 600px;
+    margin: 0 auto;
   }
+}
+
+.fa-facebook-square:hover {
+  color: rgba(0, 56, 101, 0.3);
+}
+
+.fa-instagram-square:hover {
+  color: rgba(0, 56, 101, 0.3);
+}
+
+.fa-twitter-square:hover {
+  color: rgba(0, 56, 101, 0.3);
 }
 
 .wrapper {
