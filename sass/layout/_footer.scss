@@ -90,8 +90,14 @@
   
   
   .footer__container--3 {
-    padding-bottom: 2rem;
+    padding: 1.5rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+  
+    @media only screen and (min-width: $bp-medium) {
+      justify-content: space-around;
+      flex-direction: row;
+    }
   }
   
