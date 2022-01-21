@@ -42,11 +42,13 @@ h1 {
   font-size: 2.5rem;
   font-family: Supporterhuset, Impact, Helvetica, sans-serif;
   color: #003865;
+  text-align: center;
 }
 
 @media only screen and (min-width: 56.25em) {
   h1 {
     font-size: 4rem;
+    padding: 1rem;
   }
 }
 
