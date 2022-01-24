@@ -371,6 +371,19 @@ p {
   transition: all .2s;
 }
 
+.frontpage-grid-item--1 {
+  background-image: url("/img/foodtruck.jpg");
+  transition: all .2s;
+}
+
+.frontpage-grid-item--1:hover::after {
+  background-image: linear-gradient(rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0.3)), url("/img/foodtruck.jpg");
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
 .frontpage-grid__h3 {
   font-family: Supporterhuset, Impact, Helvetica, sans-serif;
   font-size: 1rem;
