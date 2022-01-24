@@ -103,7 +103,7 @@
     aspect-ratio: 16 / 9;
     transition: all .2s;
     position: relative;
-    background-image: url(/img/bli_medlem.jpg);
+    background-image: linear-gradient(rgba(132, 163, 196, 0.7), rgba(132, 163, 196, 0.7)), url(/img/bli_medlem.jpg);
   }
 
   // .frontpage-grid__img {
