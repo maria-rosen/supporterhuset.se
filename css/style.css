@@ -370,11 +370,6 @@ p {
   transition: all .2s;
 }
 
-.frontpage-grid__img:hover {
-  filter: grayscale(0.6);
-  cursor: pointer;
-}
-
 .frontpage-grid__h3 {
   font-family: Supporterhuset, Impact, Helvetica, sans-serif;
   font-size: 1rem;
