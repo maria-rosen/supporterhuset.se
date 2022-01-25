@@ -104,27 +104,49 @@
   .frontpage-grid__img {
     width: 100%;
     aspect-ratio: 16 / 9;
-    position: relative;
     transition: all .2s;
 
+  .overlay {
+    position: absolute;
+    opacity: 0;
+    transition: all .2s;
+    background-color: red;
+  }
+
+  .frontpage-grid-item:hover .overlay {
+    opacity: 1;
+  }
+
+
+
+
+  
     // &:hover {
     //   filter: grayscale(.6);
     //   cursor: pointer;
     // }
   }
 
-  .frontpage-grid-item--1 {
-    background-image: url("/img/foodtruck.jpg");
-    transition: all .2s;
-  }
+  // .frontpage-grid-item--1 {
+  //   background-image: url("/img/bli_medlem.jpg");
+  //   background-size: cover;
+  //   transition: all .2s;
+  // }
 
-  .frontpage-grid-item--1:hover::after {
-    background-image: linear-gradient(rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0.3)), url("/img/foodtruck.jpg");
-    content: "";
-    height: 100%;
-    position: absolute;
-    width: 100%;
-  }
+  // .frontpage-grid-item--1:hover::after {
+  //   background-image: linear-gradient(rgba(132,163,196, .6), rgba(132,163,196, .6)), url("/img/bli_medlem.jpg");
+  //   background-size: cover;
+  //   content: "";
+  //   height: 100%;
+  //   position: absolute;
+  //   width: 100%;
+  //   transition: all .2s;
+  // }
+
+  
+
+
+
 
   .frontpage-grid__h3 {
     font-family: $font-heading;
