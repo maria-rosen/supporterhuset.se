@@ -374,17 +374,16 @@ p {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: rgba(132, 163, 196, 0.3);
+  background-color: #84a3c4;
 }
 
 .frontpage-grid-item:hover .overlay {
-  opacity: 1;
+  opacity: .6;
 }
 
 .frontpage-grid__img {
   width: 100%;
   aspect-ratio: 16 / 9;
-  transition: all .2s;
 }
 
 .frontpage-grid__h3 {
@@ -577,6 +576,23 @@ p {
   position: relative;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #84a3c4;
+}
+
+.page-grid-item:hover .overlay {
+  opacity: .6;
+}
+
 .page-grid__img {
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -653,6 +669,10 @@ p {
 .post-grid__img {
   width: 100%;
   aspect-ratio: 16 / 9;
+}
+
+.post-grid__img:hover {
+  filter: grayscale;
 }
 
 .post-grid__h3 {
