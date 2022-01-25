@@ -44,6 +44,28 @@
     }
   }
 
+  .post-grid-item {
+    position: relative;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: $skyblue;
+  }
+
+
+  .post-grid-item:hover .overlay {
+    opacity: .6;
+  }
+
   .post-grid__img {
     width: 100%;
     aspect-ratio: 16 / 9;
