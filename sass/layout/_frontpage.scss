@@ -101,24 +101,28 @@
     position: relative;
   }  
 
-  .frontpage-grid__img {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    transition: all .2s;
-
   .overlay {
     position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
     opacity: 0;
-    transition: all .2s;
-    background-color: red;
+    transition: .5s ease;
+    background-color: $skyblue-light;
   }
+
 
   .frontpage-grid-item:hover .overlay {
     opacity: 1;
   }
 
-
-
+  .frontpage-grid__img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    transition: all .2s;
 
   
     // &:hover {
