@@ -3,7 +3,7 @@
 const hamburger = document.querySelector(".hamburger");
 const mainNav = document.querySelector(".main-nav__content");
 const mainLogo = document.querySelector(".bg-video__logo");
-const mainNavItem = document.querySelector("main-nav__item");
+const mainNavItem = document.querySelector(".main-nav__item");
 
 hamburger.addEventListener("click", menu);
 
