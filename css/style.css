@@ -137,6 +137,8 @@ p {
 }
 
 .footer {
+  display: flex;
+  flex-direction: column;
   height: fit-content;
   width: 100%;
   background-color: #84a3c4;
@@ -151,10 +153,11 @@ p {
   }
 }
 
-.footer__divider {
-  width: 80%;
+hr {
+  margin: 2rem 0;
   height: 3px;
-  color: #003865;
+  background-color: #003865;
+  border: none;
 }
 
 .footer__container--1 {
@@ -202,7 +205,7 @@ p {
 }
 
 .footer__item__p {
-  font-family: Supporterhuset, Impact, Helvetica, sans-serif;
+  font-family: "Proxima-Nova", "Century Gothic", serif;
   font-size: 1.5rem;
   padding-top: 0.5rem;
   color: #003865;
@@ -216,7 +219,7 @@ p {
 }
 
 .footer__item__a {
-  font-family: Supporterhuset, Impact, Helvetica, sans-serif;
+  font-family: "Proxima-Nova", "Century Gothic", serif;
   color: #003865;
   display: flex;
   flex-direction: column;
@@ -240,6 +243,19 @@ p {
   .footer__container--3 {
     justify-content: space-around;
     flex-direction: row;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+.footer__container--4 {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (min-width: 56.25em) {
+  .footer__container--4 {
+    justify-content: space-around;
     max-width: 600px;
     margin: 0 auto;
   }
@@ -383,7 +399,7 @@ p {
 
 .frontpage-grid__img {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: 100%;
 }
 
 .frontpage-grid__h3 {
@@ -507,11 +523,11 @@ p {
 }
 
 .hamburger.active .bar:nth-child(1) {
-  transform: translateY(15px) translateX(-1px) rotate(45deg);
+  transform: translateX(8px) rotate(45deg);
 }
 
 .hamburger.active .bar:nth-child(3) {
-  transform: translateY(-8px) translateX(-1px) rotate(-45deg);
+  transform: translateX(-8px) rotate(-45deg);
 }
 
 .page-wrapper {
