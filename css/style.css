@@ -186,8 +186,6 @@ hr {
   .footer__container--2 {
     justify-content: space-around;
     flex-direction: row;
-    max-width: 1000px;
-    margin: 0 auto;
   }
 }
 
@@ -248,17 +246,22 @@ hr {
   }
 }
 
-.footer__container--4 {
+.footer__container--3 {
+  padding: 1.5rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 @media only screen and (min-width: 56.25em) {
-  .footer__container--4 {
-    justify-content: space-around;
-    max-width: 600px;
-    margin: 0 auto;
+  .footer__container--3 {
+    justify-content: center;
+    flex-direction: row;
   }
+}
+
+.footer__item__a {
+  padding: 0 2rem;
 }
 
 .fa-facebook-square:hover {
