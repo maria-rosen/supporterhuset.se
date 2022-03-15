@@ -14,6 +14,8 @@ function menu() {
   mainNavItem.classList.toggle("active");
 }
 
+
+
 const scrollToTop = document.querySelector('.scroll-to-top');
 
 scrollToTop.addEventListener('click', function(){
@@ -23,3 +25,8 @@ scrollToTop.addEventListener('click', function(){
         behavior: "smooth"
     });
 });
+
+
+
+
+
