@@ -496,30 +496,22 @@ hr {
 }
 
 .hamburger {
-  margin-right: 1em;
-}
-
-.bar {
-  display: block;
-  width: 30px;
-  height: 5px;
-  border-radius: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #003865;
-}
-
-@media only screen and (min-width: 56.25em) {
-  .bar {
-    width: 40px;
-    height: 7px;
-  }
+  margin: 1rem;
 }
 
 .hamburger.active {
   background-color: #fff;
-  margin-right: 0;
+}
+
+.bar {
+  display: block;
+  width: 33px;
+  height: 7px;
+  margin: 5px auto;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #003865;
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -527,11 +519,11 @@ hr {
 }
 
 .hamburger.active .bar:nth-child(1) {
-  transform: translateX(8px) rotate(45deg);
+  transform: translateY(12px) rotate(45deg);
 }
 
 .hamburger.active .bar:nth-child(3) {
-  transform: translateX(-8px) rotate(-45deg);
+  transform: translateY(-12px) rotate(-45deg);
 }
 
 .page-wrapper {
